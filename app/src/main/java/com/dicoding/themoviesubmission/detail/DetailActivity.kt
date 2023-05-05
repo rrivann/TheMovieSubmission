@@ -37,7 +37,7 @@ class DetailActivity : AppCompatActivity() {
             setStatusFavorite(statusFavorite)
             binding.fab.setOnClickListener {
                 statusFavorite = !statusFavorite
-                    detailViewModel.setFavoriteMovie(detailMovie, statusFavorite)
+                detailViewModel.setFavoriteMovie(detailMovie, statusFavorite)
                 setStatusFavorite(statusFavorite)
                 if (statusFavorite) Toast.makeText(this, "Add to favorite", Toast.LENGTH_SHORT)
                     .show() else Toast.makeText(this, "Delete from favorite", Toast.LENGTH_SHORT)
