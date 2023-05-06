@@ -25,7 +25,7 @@ class MovieRepository(
             }
 
             override suspend fun createCall(): Flow<ApiResponse<List<MovieResponse>>> =
-                remoteDataSource.getAllMovie(page)
+                remoteDataSource.getAllMovie()
 
             override suspend fun saveCallResult(data: List<MovieResponse>) {
                 val movieList = DataMapper.mapResponsesToEntities(data)

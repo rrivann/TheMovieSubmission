@@ -85,9 +85,3 @@ public *;
 ##---------------Begin: proguard configuration for RxJava ----------
 # Uncomment if you use RxJava
 #-dontwarn java.util.concurrent.Flow*
-
-#-dontwarn okhttp3.internal.platform.**
-#-dontwarn org.conscrypt.**
-#-dontwarn org.bouncycastle.**
-#-dontwarn org.openjsse.**
-
